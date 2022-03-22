@@ -87,6 +87,11 @@ ul {
 .nav-link-item {
   margin-right: 50px;
 }
+.nav.envelope {
+  display: block;
+  width: 16px;
+  height: 12 px;
+}
 .head .nav-link-item:last-child {
   margin-right: 0;
 }
@@ -120,6 +125,7 @@ ul {
   letter-spacing: 0.02em;
   font-weight: 400;
 }
+
 .nav-link:focus,
 .nav-link:hover {
   color: var(--brand-color);
@@ -192,9 +198,19 @@ ul {
 .hero-all {
   padding: 200px 0;
   text-align: center;
-
-  background-color: var(--background-dark);
 }
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-head {
   width: 696px;
 
@@ -254,6 +270,17 @@ ul {
 .ourplus .ourplus-item:first-child {
   margin-left: 0;
 }
+
+.ourplus-head::before {
+  display: block;
+  height: 120px;
+  content: '';
+  background-color: var(--background-first);
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .ourplus-head {
   margin-top: 0;
   margin-bottom: 10px;
@@ -270,6 +297,7 @@ ul {
   line-height: 1.71;
   color: var(--grey-text);
 }
+
 /* Стилізація блоку Чим ми займаємось */
 
 .whatwedo-head {
@@ -338,6 +366,30 @@ ul {
   padding-bottom: 30px;
 }
 
+.team-socials {
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.social-item {
+  display: block;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-repeat: no-repeat;
+background-position:center;
+margin-right: 10px;
+}
+.social-item:nth-last-child(){
+  margin-right: 10px;
+}
+/*.social-item-instagram{
+  background-image: url(../images/icons/instagram.svg);
+}
+.social-item-twitter{background-image: url(../images/icons/twitter.svg);}
+.social-item-facebook{background-image: url(../images/icons/facebook.svg);}
+.social-item-linkedin{background-image: url(../images/icons/linkedin.svg);}*/
 /* Стилізація футера   */
 .footer-all {
   padding-top: 60px;
