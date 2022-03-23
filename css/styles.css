@@ -336,7 +336,7 @@ ul {
 }
 .team-head-big {
   margin-bottom: 50px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -381,8 +381,29 @@ background-repeat: no-repeat;
 background-position:center;
 margin-right: 10px;
 }
+
 .social-item:nth-last-child(){
   margin-right: 10px;
+}
+.social-icon{
+  display: block;
+  width: 44px;
+  height: 44px; 
+}
+/* Блок "Наші клієнти"  */
+.clients {
+  display: inline-flex;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+.clients-item:last-child {
+  margin-right: 0;
 }
 /*.social-item-instagram{
   background-image: url(../images/icons/instagram.svg);
